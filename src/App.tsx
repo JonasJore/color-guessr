@@ -31,7 +31,9 @@ function App(): JSX.Element {
                   setColor(generateColorHex())
                   setBackground(color)
                   setQuestionNumber(questionNumber + 1)
-                }}>{item}</button>)
+                }}>
+                  <h2>{item}</h2>
+                </button>)
                 .sort((a, b) => 0.5 - Math.random())
             }
           </div>
