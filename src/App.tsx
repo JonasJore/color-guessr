@@ -37,7 +37,7 @@ function App(): JSX.Element {
                 .sort((a, b) => 0.5 - Math.random())
             }
           </div>
-          <h1>{questionNumber}</h1>
+          <h1>{questionNumber}/10</h1>
         </header>
       </div>)
   } else {
