@@ -24,7 +24,7 @@ function App(): JSX.Element {
           <div className="Alternatives-row">
             {
               [mockAnswer1, mockAnswer2, color]
-                .map((item, index) => <button className="Alternatives-button" key={index} onClick={() => {
+                .map((item, index) => <button id="Alternatives-button" className="Alternatives-button" key={index} onClick={() => {
                   if (item === color) {
                     setScore(score + 1);
                   }
