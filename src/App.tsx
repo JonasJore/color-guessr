@@ -42,7 +42,11 @@ function App(): JSX.Element {
       </div>)
   } else {
     return (
-      <GameOverScreen quizScore={score} />
+      <GameOverScreen quizScore={score} onReset={() => {
+        setScore(0);
+        setQuestionNumber(1);
+      }
+      } />
     );
   }
 }
